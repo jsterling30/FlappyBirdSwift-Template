@@ -91,6 +91,7 @@
 		BC5399DA1A44DCC90063F482 /* GLActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D51A44DCC90063F482 /* GLActivityKit.framework */; };
 		BC5399DB1A44DCC90063F482 /* JavaFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D61A44DCC90063F482 /* JavaFoundation.framework */; };
 		BC5399DC1A44DCC90063F482 /* JavaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D71A44DCC90063F482 /* JavaKit.framework */; };
+		D44EFF101BB21E0A00A1DFCA /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EFF0F1BB21E0A00A1DFCA /* MainScene.swift */; settings = {ASSET_TAGS = (); }; };
 		DFE49C0F1B86DC5D006FD35E /* GamePlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE49C0E1B86DC5D006FD35E /* GamePlayScene.swift */; };
 		DFE49C121B86DC7A006FD35E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE49C111B86DC7A006FD35E /* Character.swift */; };
 		DFE49C141B86DC9A006FD35E /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE49C131B86DC9A006FD35E /* Obstacle.swift */; };
@@ -212,6 +213,7 @@
 		BC5399D61A44DCC90063F482 /* JavaFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaFoundation.framework; path = "../../../../Library/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaFoundation.framework"; sourceTree = "<group>"; };
 		BC5399D71A44DCC90063F482 /* JavaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaKit.framework; path = "../../../../Library/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaKit.framework"; sourceTree = "<group>"; };
 		D352B48019EC608A00829775 /* MetalShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MetalShaders; path = Source/MetalShaders; sourceTree = "<group>"; };
+		D44EFF0F1BB21E0A00A1DFCA /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScene.swift; path = Source/MainScene.swift; sourceTree = "<group>"; };
 		DFE49C0E1B86DC5D006FD35E /* GamePlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GamePlayScene.swift; path = Source/GamePlayScene.swift; sourceTree = "<group>"; };
 		DFE49C111B86DC7A006FD35E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = Source/Character.swift; sourceTree = "<group>"; };
 		DFE49C131B86DC9A006FD35E /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Obstacle.swift; path = Source/Obstacle.swift; sourceTree = "<group>"; };
@@ -546,6 +548,7 @@
 			isa = PBXGroup;
 			children = (
 				DFE49C0E1B86DC5D006FD35E /* GamePlayScene.swift */,
+				D44EFF0F1BB21E0A00A1DFCA /* MainScene.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -626,13 +629,15 @@
 		B77F1B2617B978D7009739AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Apportable;
 				TargetAttributes = {
 					7A4035FE19DDEE84007B6E8F = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
 					B77F1B2D17B978D7009739AE = {
+						DevelopmentTeam = N5SHYQU29S;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 0;
@@ -838,6 +843,7 @@
 				DFE49C0F1B86DC5D006FD35E /* GamePlayScene.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				DFE49C141B86DC9A006FD35E /* Obstacle.swift in Sources */,
+				D44EFF101BB21E0A00A1DFCA /* MainScene.swift in Sources */,
 				DFE49C121B86DC7A006FD35E /* Character.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				DFE49C161B86DCB3006FD35E /* Goal.swift in Sources */,
@@ -904,6 +910,7 @@
 					"-ObjC",
 					"-lz",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.FlappySwift;
 				PRODUCT_MODULE_NAME = FlappySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -948,6 +955,7 @@
 					"-ObjC",
 					"-lz",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.FlappySwift;
 				PRODUCT_MODULE_NAME = FlappySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -996,6 +1004,7 @@
 					"-lgles_apportable",
 					"-landroid",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.FlappySwift;
 				PRODUCT_MODULE_NAME = FlappySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1044,6 +1053,7 @@
 					"-lgles_apportable",
 					"-landroid",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.FlappySwift;
 				PRODUCT_MODULE_NAME = FlappySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1066,6 +1076,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1146,6 +1157,7 @@
 					"-lz",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocos2d.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = FlappySwift;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
@@ -1180,6 +1192,7 @@
 					"-lz",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocos2d.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = FlappySwift;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
